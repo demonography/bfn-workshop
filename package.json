@@ -1,0 +1,13 @@
+{
+  "name": "bfn-workshop",
+  "version": "1.0.0",
+  "description": "black futures now workshop",
+  "devDependencies": {
+    "autoprefixer": "^6.3.4",
+    "autoprefixer-core": "^6.0.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0"
+  }
+}
