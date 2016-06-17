@@ -1,6 +1,13 @@
 body {
   font-family: $main-font;
+  font-size: 18px;
 }
 h1 {
-  font-family: 'Droid Sans';
+  font-weight: 300;
+  font-size: 2rem;
+}
+p {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.4em;
 }
