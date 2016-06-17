@@ -1,10 +1,20 @@
 body {
   font-family: $main-font;
   font-size: 18px;
+  color: #333;
 }
 h1 {
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  display: inline-block;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid transparent;
+  span {
+    font-weight: 500;
+  }
+  &:hover {
+    border-bottom: 1px dashed #888;
+  }
 }
 p {
   font-weight: 400;
