@@ -1,10 +1,59 @@
 body {
-  background-color: #F8F5E9;
+    background-color: $grey-light;
+    left: 0;
+    overflow-x: hidden;
+    position: relative;
+    transition: all 0.3s ease;
 }
 section {
-  padding: 30px 10px;
+    padding: 30px 10px;
+    height: 100vh;
 }
 .wrapper {
-  max-width: 900px;
-  margin: 20px auto;
+    max-width: 900px;
+    margin: 20px auto;
+}
+nav {
+    ul {
+        padding: 2em;
+        margin: 0;
+        li {
+            list-style-type: none;
+            font-size: 0.8em;
+            padding: 0.5em 0;
+        }
+    }
+}
+.nav__left {
+    background-color: lighten($grey-light, 5%);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 320px;
+    z-index: 1000;
+    left: -320px;
+    transition: all 0.3s ease;
+}
+.push-right {
+    left: 320px;
+}
+.push-left {
+    left: -320px;
+}
+.openLeft {
+    left: 0;
+}
+.openRight {
+    right: 0;
+}
+.btn--navtoggle {
+    position: absolute;
+    top: 0;
+    left: 320px;
+    padding: 1em;
+    font-size: 12px;
+    width: 130px; 
+    span {
+        display: inline-block;
+    }
 }
