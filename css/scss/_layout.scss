@@ -1,5 +1,5 @@
 body {
-    background-color: $grey-light;
+    background-color: darken($grey-light, 10%);
     left: 0;
     overflow-x: hidden;
     position: relative;
@@ -7,9 +7,14 @@ body {
 }
 section {
     padding: 30px 10px;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
+    background-color: lighten($green, 45%);
+    &:nth-child(odd) {
+        background-color: $grey-light;
+    }
 }
-.wrapper {
+.content {
     max-width: 900px;
     margin: 20px auto;
 }
@@ -20,12 +25,20 @@ nav {
         li {
             list-style-type: none;
             font-size: 0.8em;
-            padding: 0.5em 0;
+            padding: 0.7em 0;
+            border-bottom: 1px dashed $green;
+            a {
+                color: #1F271B;
+                &:hover {
+                    background: $green;
+                    transition: all 0.3s ease;
+                }
+            }
         }
     }
 }
 .nav__left {
-    background-color: lighten($grey-light, 5%);
+    background-color: darken($grey-light, 10%);
     height: 100%;
     position: fixed;
     top: 0;
@@ -52,8 +65,31 @@ nav {
     left: 320px;
     padding: 1em;
     font-size: 12px;
-    width: 130px; 
+    width: 130px;
     span {
         display: inline-block;
+    }
+}
+ul.resources {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+        padding: 1em 0;
+        a {
+            background: $grey-dark;
+            padding: 6px 12px;
+            display: inline-block;
+            transition: all 0.2s ease;
+            font-family: $secondary-font;
+            &:hover {
+                background: $green;
+                color: $grey-dark;
+                transition: all 0.2s ease;
+            }
+        }
+        p {
+            display: inline-block;
+        }
     }
 }

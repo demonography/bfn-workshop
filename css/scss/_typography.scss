@@ -4,18 +4,24 @@ body {
   color: #333;
 }
 h1 {
+  font-family: $main-font;
   font-weight: 300;
   font-size: 2.5rem;
   display: inline-block;
   padding-bottom: 1rem;
-  border-bottom6: 1px solid transparent;
+  border-bottom: 1px solid transparent;
   line-height: 1.25rem;
   span {
     font-weight: 500;
   }
   &:hover {
-    border-bottom: 1px dashed #888;
+    border-bottom: 1px dashed $grey-dark;
   }
+}
+h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  display: block;
 }
 p {
   font-weight: 400;
@@ -24,5 +30,6 @@ p {
 }
 a, a:visited {
   text-decoration: none;
-  color: $red;
+  color: $green;
+  transition: all 0.2s ease;
 }
