@@ -13,10 +13,21 @@ section {
     &:nth-child(odd) {
         background-color: $grey-light;
     }
+    &:last-child {
+      background-color: $grey-dark;
+      color: $grey-light;
+    }
 }
 .content {
     max-width: 900px;
     margin: 20px auto;
+    img {
+      margin: 10px auto;
+      text-align: center;
+      display: block;
+      max-width: 400px;
+      width: 100%;
+    }
 }
 nav {
     ul {
