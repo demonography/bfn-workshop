@@ -49,6 +49,7 @@ $(document).ready(function() {
     $(showLeft).click(function() {
         $(navLeft).toggleClass("openLeft");
         $(document.body).toggleClass("push-right");
+				$(showLeft).toggleClass("active");
         return false;
     });
 

@@ -6,7 +6,7 @@ body {
     transition: all 0.3s ease;
 }
 section {
-    padding: 30px 10px;
+    padding: 50px 10px;
     min-height: 100vh;
     height: auto;
     background-color: lighten($green, 45%);
@@ -19,7 +19,7 @@ section {
     }
 }
 .content {
-    max-width: 900px;
+    max-width: 960px;
     margin: 20px auto;
     img {
       margin: 10px auto;
@@ -77,8 +77,15 @@ nav {
     padding: 1em;
     font-size: 12px;
     width: 130px;
-    span {
-        display: inline-block;
+    &:before {
+      font-family: 'FontAwesome';
+      content: '\f0c9';
+    }
+    &.active {
+      &:before {
+        font-family: 'FontAwesome';
+        content: '\f00d';
+      }
     }
 }
 ul.resources {
