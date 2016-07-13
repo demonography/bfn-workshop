@@ -18,6 +18,7 @@ section {
       color: $grey-light;
     }
 }
+
 .content {
     max-width: 960px;
     margin: 20px auto;
@@ -110,4 +111,21 @@ ul.resources {
             display: inline-block;
         }
     }
+}
+.spacer {
+  content: '';
+  height: 40px;
+  width: 100%;
+  display: block;
+  clear: both;
+}
+.cheatsheet__row {
+  display: flex;
+  margin: 10px 0;
+  width: 100%;
+  padding: 2em 1em;
+  border-bottom: 1px dashed rgba($grey-light, 0.4);
+  div {
+    width: 50%;
+  }
 }

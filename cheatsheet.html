@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title>Hello, world.</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <!--[if lte IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+        <script src="https://use.fontawesome.com/a6e3cde034.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,900" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css"/>
+    </head>
+
+    <body>
+        <!-- <div class="nav__left">
+            <nav></nav>
+            <a href="" id="show--nav" class="btn btn--navtoggle">
+                table of contents</a>
+        </div> -->
+
+        <main>
+            <section class="cheatsheet">
+                <div class="content">
+                    <h1>Cheat Sheet for Workshop</h1>
+                    <h2>HTML</h2>
+                    <p>
+                        Stands for: Hyper Text Markup Language
+                    </p>
+                    <p>
+                        Structured like this:
+                        <code>
+                            <tag>content</tag>
+                        </code>
+                        <br/>
+                        Tags mark the beginning and end of an HTML element. When you create an open tag, remember to close it!
+                    </p>
+                    <div class="cheatsheet__row">
+                        <div class="code">
+                            <code>
+                                <h1>text</h1>
+                            </code>
+                        </div>
+                        <div class="results">Creates a level one heading, usually the largest/top level heading in a page.
+                            <h1>Level 1 Heading</h1>
+                        </div>
+                    </div>
+                    <div class="cheatsheet__row">
+                        <div class="code">
+                            <code>
+                                <p>text<p></code>
+                                </div>
+                                <div class="results">Creates a paragraph of text, making it easier to divide up big blocks of text.
+                                </div>
+                            </div>
+                            <div class="cheatsheet__row">
+                                <div class="code">
+                                    <code>
+                                        <strong>text</strong>
+                                    </code>
+                                </div>
+                                <div class="results">Makes your text
+                                    <strong>bold</strong>
+                                </div>
+                            </div>
+                            <div class="cheatsheet__row">
+                                <div class="code">
+                                    <code>
+                                        <img src="image.jpg"/>
+                                    </code>
+                                </div>
+                                <div class="results">Puts an image into the page.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spacer"></div>
+                        <div class="content">
+                            <h2>CSS</h2>
+                            <p>
+                                Stands for: Cascading Style Sheets
+                            </p>
+                            <p>
+                                CSS is made up of blocks, which are rules to tell the HTML what to do. Selectors are used to tell the CSS which HTML elements to target.
+                            </p>
+                            <code>
+                                selector { property: value; }</code>
+                            <div class="cheatsheet__row">
+                                <div class="code">
+                                    <code>body { background-color: blue; }</code>
+                                </div>
+                                <div class="results">
+                                    Turns the background-color of the body of the page (usually the whole page) blue.
+                                </div>
+                            </div>
+                            <div class="cheatsheet__row">
+                                <div class="code">
+                                    <code>p { color: red; }</code>
+                                </div>
+                                <div class="results">
+                                    Turns text in all paragraphs in the page red.
+                                </div>
+                            </div>
+                            <div class="cheatsheet__row">
+                                <div class="code">
+                                    <code>p { font-family: arial; }</code>
+                                </div>
+                                <div class="results">
+                                    Changes the font of the text in all paragraphs from the default computer font into Arial.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+
+            </body>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+            <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+            <script src="js/scripts.js"></script>
+
+            <script>
+                (function (i, s, o, g, r, a, m) {
+                    i['GoogleAnalyticsObject'] = r;
+                    i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    },
+                    i[r].l = 1 * new Date();
+                    a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                    a.async = 1;
+                    a.src = g;
+                    m.parentNode.insertBefore(a, m)
+                })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+                ga('create', 'UA-80483984-1', 'auto');
+                ga('send', 'pageview');
+            </script>
+        </html>

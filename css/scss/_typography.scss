@@ -50,3 +50,24 @@ a.fancy {
     color: darken($green, 10%);
   }
 }
+blockquote {
+  font-size: 2rem;
+  background-color: darken($grey-light,5%);
+  line-height: 2.75rem;
+  border-bottom: 1px dashed $grey-dark;
+}
+ul {
+  li {
+    padding: 0.5em 0;
+  }
+}
+pre {
+  display: block;
+  background: darken($grey-dark,10%);
+  width: 100%;
+}
+code {
+  font-family: $secondary-font;
+  background: darken($grey-dark,10%);
+  font-size: 1.25rem;
+}
