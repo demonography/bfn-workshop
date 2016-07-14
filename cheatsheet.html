@@ -48,6 +48,16 @@
                     <div class="cheatsheet__row">
                         <div class="code">
                             <code>
+                                <h2>text</h2>
+                            </code>
+                        </div>
+                        <div class="results">Creates a level two heading.
+                            <h2>Level 2 Heading</h2>
+                        </div>
+                    </div>
+                    <div class="cheatsheet__row">
+                        <div class="code">
+                            <code>
                                 <p>text<p></code>
                                 </div>
                                 <div class="results">Creates a paragraph of text, making it easier to divide up big blocks of text.
@@ -66,72 +76,134 @@
                             <div class="cheatsheet__row">
                                 <div class="code">
                                     <code>
+                                        <em>text</em>
+                                    </code>
+                                </div>
+                                <div class="results">Makes your text
+                                    <em>emphasized
+                                    </em>
+                                    (also known as italicized)
+                                </div>
+                            </div>
+                            <div class="cheatsheet__row">
+                                <div class="code">
+                                    <code>
+                                        <ul>
+                                            <li>
+                                                list item</li>
+                                        </ul>
+                                    </code>
+                                </div>
+                                <div class="results">Creates an unordered list (with default dots)
+                                    <ul>
+                                        <li>
+                                            list item
+                                        </li>
+                                        <li>
+                                            list item
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="cheatsheet__row">
+                                <div class="code">
+                                    <code>
+                                        <ol>
+                                            <li>
+                                                list item</li>
+                                        </ol>
+                                    </code>
+                                </div>
+                                <div class="results">Creates an ordered list (with default numbering)
+                                    <ol>
+                                        <li>
+                                            list item
+                                        </li>
+                                        <li>
+                                            list item
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="cheatsheet__row">
+                                <div class="code">
+                                    <code>
                                         <img src="image.jpg"/>
                                     </code>
                                 </div>
                                 <div class="results">Puts an image into the page.
                                 </div>
                             </div>
+                            <div class="cheatsheet__row">
+                                <div class="code">
+                                    <code>
+                                        <a href="http://google.com"/>a link to google</a>
+                                </code>
+                            </div>
+                            <div class="results">Links to another page or website - external links (links that link to another website) always need to start with http:// . You can put any text you want in between the tags.
+                                <a href="http://google.com"/>a link to google</a>
                         </div>
-                        <div class="spacer"></div>
-                        <div class="content">
-                            <h2>CSS</h2>
-                            <p>
-                                Stands for: Cascading Style Sheets
-                            </p>
-                            <p>
-                                CSS is made up of blocks, which are rules to tell the HTML what to do. Selectors are used to tell the CSS which HTML elements to target.
-                            </p>
-                            <code>
-                                selector { property: value; }</code>
-                            <div class="cheatsheet__row">
-                                <div class="code">
-                                    <code>body { background-color: blue; }</code>
-                                </div>
-                                <div class="results">
-                                    Turns the background-color of the body of the page (usually the whole page) blue.
-                                </div>
-                            </div>
-                            <div class="cheatsheet__row">
-                                <div class="code">
-                                    <code>p { color: red; }</code>
-                                </div>
-                                <div class="results">
-                                    Turns text in all paragraphs in the page red.
-                                </div>
-                            </div>
-                            <div class="cheatsheet__row">
-                                <div class="code">
-                                    <code>p { font-family: arial; }</code>
-                                </div>
-                                <div class="results">
-                                    Changes the font of the text in all paragraphs from the default computer font into Arial.
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div class="content">
+                    <h2>CSS</h2>
+                    <p>
+                        Stands for: Cascading Style Sheets
+                    </p>
+                    <p>
+                        CSS is made up of blocks, which are rules to tell the HTML what to do. Selectors are used to tell the CSS which HTML elements to target.
+                    </p>
+                    <code>
+                        selector { property: value; }</code>
+                    <div class="cheatsheet__row">
+                        <div class="code">
+                            <code>body { background-color: blue; }</code>
                         </div>
-                    </section>
-                </main>
+                        <div class="results">
+                            Turns the background-color of the body of the page (usually the whole page) blue.
+                        </div>
+                    </div>
+                    <div class="cheatsheet__row">
+                        <div class="code">
+                            <code>p { color: red; }</code>
+                        </div>
+                        <div class="results">
+                            Turns text in all paragraphs in the page red.
+                        </div>
+                    </div>
+                    <div class="cheatsheet__row">
+                        <div class="code">
+                            <code>p { font-family: arial; }</code>
+                        </div>
+                        <div class="results">
+                            Changes the font of the text in all paragraphs from the default computer font into Arial.
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-            </body>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-            <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-            <script src="js/scripts.js"></script>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/scripts.js"></script>
 
-            <script>
-                (function (i, s, o, g, r, a, m) {
-                    i['GoogleAnalyticsObject'] = r;
-                    i[r] = i[r] || function () {
-                        (i[r].q = i[r].q || []).push(arguments)
-                    },
-                    i[r].l = 1 * new Date();
-                    a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-                    a.async = 1;
-                    a.src = g;
-                    m.parentNode.insertBefore(a, m)
-                })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            },
+            i[r].l = 1 * new Date();
+            a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-                ga('create', 'UA-80483984-1', 'auto');
-                ga('send', 'pageview');
-            </script>
-        </html>
+        ga('create', 'UA-80483984-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</html>

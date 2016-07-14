@@ -51,12 +51,13 @@ a.fancy {
   }
 }
 blockquote {
-  font-size: 2rem;
-  background-color: darken($grey-light,5%);
-  line-height: 2.75rem;
-  border-bottom: 1px dashed $grey-dark;
+  font-size: 1.5rem;
+  border-left: 5px solid $red;
+  line-height: 2.25rem;
+  padding: 1em;
+  //border-bottom: 1px dashed $grey-dark;
 }
-ul {
+ul, ol {
   li {
     padding: 0.5em 0;
   }
