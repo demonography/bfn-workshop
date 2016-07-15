@@ -87,12 +87,14 @@
                             </div>
                             <div class="cheatsheet__row">
                                 <div class="code">
-                                    <code>
-                                        <ul>
-                                            <li>
-                                                list item</li>
-                                        </ul>
-                                    </code>
+<pre>
+  <code>
+    <ul>
+        <li>list item</li>
+        <li>list item</li>
+    </ul>
+</code>
+</pre>
                                 </div>
                                 <div class="results">Creates an unordered list (with default dots)
                                     <ul>
@@ -107,12 +109,14 @@
                             </div>
                             <div class="cheatsheet__row">
                                 <div class="code">
-                                    <code>
-                                        <ol>
-                                            <li>
-                                                list item</li>
-                                        </ol>
-                                    </code>
+<pre>
+  <code>
+      <ol>
+          <li>list item</li>
+          <li>list item</li>
+      </ol>
+  </code>
+</pre>
                                 </div>
                                 <div class="results">Creates an ordered list (with default numbering)
                                     <ol>
@@ -144,6 +148,15 @@
                                 <a href="http://google.com"/>a link to google</a>
                         </div>
                     </div>
+                    <div class="cheatsheet__row">
+                        <div class="code">
+                            <code>
+                                <p class="custom">text</p>
+                        </code>
+                    </div>
+                    <div class="results">The class specified in this custom paragraph text can be targeted by CSS so we can style it more specifically. Attributes are always structured in HTML inside the opening tag like so: &lt;tag attribute="value"&gt;&lt;/tag&gt;
+                </div>
+            </div>
                 </div>
                 <div class="spacer"></div>
                 <div class="content">
@@ -180,6 +193,14 @@
                             Changes the font of the text in all paragraphs from the default computer font into Arial.
                         </div>
                     </div>
+                    <div class="cheatsheet__row">
+                        <div class="code">
+                            <code>.custom { font-size: 30px; }</code>
+                        </div>
+                        <div class="results">
+                            Remember the custom class we put on the p tag above? In css, we can target classes using a period before the name of the class we created (no space) and now only elements with the "custom" class will have a font size of 30px.
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
@@ -187,7 +208,16 @@
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('code').each(function() {
+              $(this).text($(this).html());
+          });
+      });
+    </script>
+
+
+    <!-- <script src="js/scripts.js"></script> -->
 
     <script>
         (function (i, s, o, g, r, a, m) {
